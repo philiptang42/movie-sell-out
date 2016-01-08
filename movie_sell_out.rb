@@ -18,6 +18,14 @@ class Theater
     end
   end
 
+  def at_capacity?
+    if patrons == seats
+      true
+    else
+      false
+    end
+  end
+
 end
 
 binding.pry
