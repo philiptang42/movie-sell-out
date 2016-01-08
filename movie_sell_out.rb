@@ -26,6 +26,14 @@ class Theater
     end
   end
 
+  def record_walk_outs!(walk_outs = nil)
+    if walk_outs.nil?
+      puts "Nobody has left the theater! Yet..."
+    else
+      @patrons = patrons - walk_outs
+    end
+  end
+
 end
 
 binding.pry
